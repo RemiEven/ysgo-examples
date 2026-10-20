@@ -2,7 +2,7 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/go
 {
 	"name": "Go",
-	"image": "mcr.microsoft.com/devcontainers/go:1-1.21-bullseye",
+	"image": "mcr.microsoft.com/devcontainers/go:1.27-trixie",
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -11,7 +11,7 @@
 		}
 	},
 	"features": {
-		"ghcr.io/devcontainers-contrib/features/apt-get-packages": {
+		"ghcr.io/devcontainers-extra/features/apt-get-packages": {
 			"packages": "libgl1-mesa-dev,xorg-dev,libasound2-dev,zip"
 		}
 	}
