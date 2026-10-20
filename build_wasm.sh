@@ -7,7 +7,7 @@ rm -rf dist
 mkdir dist
 
 # Copy static files to dist folder
-cp $(go env GOROOT)/misc/wasm/wasm_exec.js dist/
+cp $(go env GOROOT)/lib/wasm/wasm_exec.js dist/
 cp index.html dist/
 cp -r assets/files dist/assets
 

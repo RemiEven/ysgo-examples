@@ -50,7 +50,7 @@ func GetDialogueRunner(ctx context.Context, path string) (*ysgo.DialogueRunner, 
 		return nil, fmt.Errorf("failed to load dialogue file [%s]: %w", path, err)
 	}
 
-	dr, err := ysgo.NewDialogueRunner(nil, "", bytes.NewReader(dialogueFileData))
+	dr, err := ysgo.NewDialogueRunner(nil, nil, bytes.NewReader(dialogueFileData))
 	if err != nil {
 		return nil, fmt.Errorf("failed to parse dialogue [%s]: %w", path, err)
 	}
